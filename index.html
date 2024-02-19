@@ -1,14 +1,35 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My landing page</title>
+        <!-- CHANGE THESE VALUES -->
+        <!-- <link rel="stylesheet" href="reset.css" /> -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <header class="sliding-header">
+                <a href="#top" class="back-arrow"><img src="./materials/arrow.png"></img></a>
+            </header>
+            
+            <div class="static-header" id="top">
+                <header class="static-header-container">
+                    <div class="logo">
+                        <img src="./materials/logo.png" class="logo-img"></img>
+                        <h1 class="logo-name">IntelliDose</h1>
+                    </div>
+
+                    <nav class="navbar">
+                        <a class="navbar-btn" href="#">PRODUCTS</a><a class="navbar-btn" style="margin-left: 20px;" href="#">CONTACT US</a>
+                    </nav>
+                </header>
+            </div>
+
+            <div style="height: 2000px;"></div>
+        </div>
+
+    </body>
 </html>
