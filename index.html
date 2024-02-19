@@ -7,6 +7,19 @@
         <!-- CHANGE THESE VALUES -->
         <!-- <link rel="stylesheet" href="reset.css" /> -->
         <link rel="stylesheet" href="style.css" />
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbarButtons = document.querySelectorAll('.navbar-btn');
+
+                navbarButtons.forEach(function(button) {
+                    button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert('WIP - Meant to redirect to another page...');
+                    });
+                });
+            });
+        </script>
     </head>
 
     <body>
