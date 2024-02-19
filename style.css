@@ -125,6 +125,7 @@ a {
 }
 
 .overpanel {
+    width: 100%;
     border: 1px solid #000000;
     box-shadow: 
         0 4px 20px rgba(0, 0, 0, 0.2),
@@ -154,6 +155,19 @@ a {
     border-radius: 4px;
 }
 
+.features-list-container {
+    margin: 0 150px;
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .features-list {
     font-size: 20px;
+}
+
+.features-list li {
+    margin-bottom: 10px;
 }
