@@ -1,14 +1,100 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My landing page</title>
-    <!-- CHANGE THESE VALUES -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ADD YOUR CODE HERE -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My landing page</title>
+        <!-- CHANGE THESE VALUES -->
+        <!-- <link rel="stylesheet" href="reset.css" /> -->
+        <link rel="stylesheet" href="style.css" />
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbarButtons = document.querySelectorAll('.navbar-btn');
+
+                navbarButtons.forEach(function(button) {
+                    button.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert('WIP - Meant to redirect to another page...');
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="main">
+            <header class="sliding-header">
+                <a href="#top" class="back-arrow"><img src="./materials/arrow.png"></img></a>
+            </header>
+            
+            <div class="static-header" id="top">
+                <header class="static-header-container">
+                    <div class="logo">
+                        <img src="./materials/logo.png" class="logo-img"></img>
+                        <p class="logo-name">IntelliDose</p>
+                    </div>
+
+                    <nav class="navbar">
+                        <a class="navbar-btn" href="#">PRODUCTS</a><a class="navbar-btn" style="margin-left: 20px;" href="#">CONTACT US</a>
+                    </nav>
+                </header>
+            </div>
+        
+            <div class="main-container greeting-container">
+                <div class="greeting-text-container">
+                    <div style="width: 400px;">
+                        <p class="header">IntelliDose</p>
+                        <p>Stay on top of your wellness journey effortlessly with IntelliDose, your intelligent pill companion.</p>
+                    </div>
+                </div>
+                <img class="greeting-img" src="./materials/pills.png"></img>
+            </div>
+
+            <div class="overpanel">
+                <div class="main-container">
+                    <p class="header" style="margin: 40px 0;">About us</p>
+                    <div class="about-us-container">
+                        <p class="about-us-item">Introducing IntelliDose, the intelligent solution designed to revolutionize pill management for seniors, kids  and others for whom this process is routine. </p>
+                        <div class="about-us-separator"></div>
+                        <p class="about-us-item">With automated reminders, personalized schedules, and easy-to-use features, IntelliDose ensures that every dose is taken on time, bringing peace of mind to both treatment receivers and their caregivers.</p>
+                        <div class="about-us-separator"></div>
+                        <p class="about-us-item">Embrace a new era of health management with IntelliDose, where technology meets care, making medication adherence seamless and worry-free.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <p class="header" style="margin: 40px 0;">Features</p>
+
+                <div class="features-list-container">
+                    <img src="./materials/features.png"></img>
+                    <ul class="features-list">
+                        <li><p><b>Storage & recording.</b> A handy storage that keeps track of the med stockpile.</p></li>
+                        <li><p><b>Personalized schedule.</b> Create different schedules for multiple users.</p></li>
+                        <li><p><b>Seamless authentication.</b> RFID tags usage to simplify device usage.</p></li>
+                        <li><p><b>Logging & notifications.</b> Be aware of all  manipulations with  the device.</p></li>
+                        <li><p><b>Monitoring & signaling.</b> Receive visual and audio notif-s about curretn status.</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="overpanel cta-container">
+                <div class="main-container">
+                    <div class="cta-content-container">
+                        <p class="header" style="font-size: 30px;">Did we manage to catch Your attention?</p>
+                        <p style="font-size: 20px; text-align: center;">Our consultants are always ready to clarify any details and help you choose  the most suitable one for your model.</p>
+                        
+                        <div class="cta-buttons-container">
+                            <a class="navbar-btn" href="#">PRODUCTS</a><a class="navbar-btn" style="margin-left: 20px;" href="#">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>2024, IntelliDose, all rights reserved</p>
+            </footer>
+        </div>
+    </body>
 </html>
