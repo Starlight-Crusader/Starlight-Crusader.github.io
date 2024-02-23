@@ -4,8 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My landing page</title>
-        <!-- CHANGE THESE VALUES -->
-        <!-- <link rel="stylesheet" href="reset.css" /> -->
         <link rel="stylesheet" href="style.css" />
     
         <script>
@@ -24,14 +22,14 @@
 
     <body>
         <div class="main">
-            <header class="sliding-header">
-                <a href="#top" class="back-arrow"><img src="./materials/arrow.png"></img></a>
+            <header class="sliding-header sliding-header-container">
+                <a href="#top"><img src="./materials/arrow.png" style="width: 30px; height: 30px;"></a>
             </header>
             
             <div class="static-header" id="top">
-                <header class="static-header-container">
-                    <div class="logo">
-                        <img src="./materials/logo.png" class="logo-img"></img>
+                <header class="main-container static-header-container">
+                    <div class="logo-container">
+                        <img src="./materials/logo.png" class="logo-img">
                         <p class="logo-name">IntelliDose</p>
                     </div>
 
@@ -42,15 +40,15 @@
             </div>
         
             <div class="main-container greeting-container">
-                <div class="greeting-container-item">
+                <div class="greeting-item-container">
                     <div style="width: 400px;">
                         <p class="header">IntelliDose</p>
                         <p class="text" style="text-align: center;">Stay on top of your wellness journey effortlessly with IntelliDose, your intelligent pill companion.</p>
                     </div>
                 </div>
 
-                <div class="greeting-container-item">
-                    <img class="greeting-img" src="./materials/pills.png"></img>
+                <div class="greeting-item-container">
+                    <img class="greeting-img" src="./materials/pills.png">
                 </div>
             </div>
 
@@ -68,17 +66,38 @@
             </div>
 
             <div class="main-container">
-                <p class="header" style="margin: 40px 0;">Features</p>
+                <p class="header" style="margin: 40px 0;">Selling features</p>
 
-                <div class="features-list-container">
-                    <img src="./materials/features.png" style="width: 160px; height: 160px;"></img>
-                    <ul class="features-list text">
-                        <li><p><b>Storage & recording.</b> A handy storage that keeps track of the med stockpile.</p></li>
-                        <li><p><b>Personalized schedule.</b> Create different schedules for multiple users.</p></li>
-                        <li><p><b>Seamless authentication.</b> RFID tags usage to simplify device usage.</p></li>
-                        <li><p><b>Logging & notifications.</b> Be aware of all  manipulations with  the device.</p></li>
-                        <li><p><b>Monitoring & signaling.</b> Receive visual and audio notif-s about curretn status.</p></li>
-                    </ul>
+                <div class="features-container">
+                    <div class="features-item features-item-container">
+                        <div class="features-item-header features-item-header-container" style="background-image: url('./materials/pills.png');">
+                            <p>Personalized<br>schedule</p>
+                        </div>
+
+                        <div class="features-item-desc">
+                            <p>Create different schedules for multiple users.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="features-item">
+                        <div class="features-item-header features-item-header-container" style="background-image: url('./materials/pills.png');">
+                            <p>Seamless<br>accessing</p>
+                        </div>
+
+                        <div class="features-item-desc">
+                            <p>Use RFID tags to simplify device access.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="features-item">
+                        <div class="features-item-header features-item-header-container" style="background-image: url('./materials/pills.png');">
+                            <p>Monitoring<br>& logging</p>
+                        </div>
+
+                        <div class="features-item-desc">
+                            <p>Be aware of all manipulations and changes happening to the device.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -97,7 +116,7 @@
                 </div>
             </div>
 
-            <footer>
+            <footer class="footer-container">
                 <p>2024, IntelliDose, all rights reserved</p>
             </footer>
         </div>
