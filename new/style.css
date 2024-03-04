@@ -20,10 +20,20 @@ h1, p, a {
 }
 
 .sliding-header img {
-    margin: 5px 0;
+    margin: 10% 0;
+    aspect-ratio: 1 / 1;
+}
 
-    width: 30px;
-    height: 30px;
+@media screen and (max-width: 768px) {
+    .sliding-header img {
+        width: 8vw;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .sliding-header img {
+        width: 2vw;
+    }
 }
 
 .navbtn:hover {
@@ -231,14 +241,14 @@ h1, p, a {
 @media screen and (max-width: 768px) {
     .header {
         font-size: 8vw;
-        margin: 7.5vw;
+        margin: 7.5vw 0;
     }
 }
 
 @media screen and (min-width: 769px) {
     .header {
         font-size: 2.5vw;
-        margin: 3vw;
+        margin: 3vw 0;
     }
 }
 
@@ -255,15 +265,16 @@ h1, p, a {
 @media screen and (max-width: 768px) {
     .about-items {
         flex-direction: column;
+        margin-bottom: 11vw;
     }
 
     .about-item {
         max-width: 70vw;
-        font-size: 6vw;
+        font-size: 5vw;
     }
 
     .about-separator {
-        height: 0.8vw;
+        height: 0.5vw;
         width: 70vw;
         border-radius: 4px;
 
@@ -293,5 +304,111 @@ h1, p, a {
         border-radius: 4px;
 
         background-color: black;
+    }
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.features-section h1 {
+    text-align: center;
+}
+
+.features-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-item {
+    aspect-ratio: 3 / 4;
+
+    border-radius: 20px;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 10px lightgrey;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-item div {
+    padding: 5% 0;
+}
+
+.features-item-name {
+    font-weight: bold;
+}
+
+.features-item-icon img {
+    width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .features-items {
+        flex-direction: column;
+        padding: 5vw 10vw;
+
+        gap: 8vw;
+    }
+
+    .features-item {
+        width: 75%;
+    }
+
+    .features-item-name {
+        font-size: 6vw;
+    }
+
+    .features-item-desc {
+        font-size: 4vw;
+    
+        margin-bottom: 8%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .features-items {
+        flex-direction: row;
+        margin-bottom: 4vw;
+
+        gap: 0 2vw;
+    }
+
+    .features-item {
+        width: 15%;
+    }
+
+    .features-item-name {
+        font-size: 1.2vw;
+    }
+    
+    .features-item-desc {
+        font-size: 0.9vw;
+    
+        margin-bottom: 20%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) {
+    .cta-section {
+        width: 100%;
+        aspect-ratio: 2.3 / 1;
+
+        background-image: url(../materials/device.png);
+        background-size: 100% 100%;
     }
 }
