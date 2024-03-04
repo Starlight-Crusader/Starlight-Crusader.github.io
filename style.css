@@ -3,6 +3,58 @@
     padding: 0;
 }
 
+.mascot {
+    position: fixed;
+
+    bottom: 4vw;
+    right: 2vw;
+
+    animation: appear 10s forwards, bounce 1s infinite alternate;
+}
+
+.mascot img {
+    width: 8vw;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mascot:hover::before {
+    content: "I am very glad you've visited us!";
+
+    display: block;
+    position: absolute;
+    
+    bottom: 100%;
+    left: -50%;
+    transform: translateX(-50%);
+    
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1vw;
+
+    color: black;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 
 .upbtn {
     position: fixed;
@@ -40,6 +92,10 @@ h1, p, a {
 }
 
 @media screen and (max-width: 768px) {
+    .mascot {
+        visibility: hidden;
+    }
+
     .sliding-header {
         visibility: hidden;
     }
