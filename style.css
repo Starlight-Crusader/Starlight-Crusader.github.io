@@ -165,7 +165,7 @@ h1, p, a {
         width: 100%;
         aspect-ratio: 1 / 1;
 
-        background-image: url('../materials/pills_m.png');
+        background-image: url('materials/pills_m.png');
         background-size: 100% 100%;
     }
 
@@ -219,7 +219,7 @@ h1, p, a {
     }
 
     .greeting-image {
-        background-image: url('../materials/pills_d.png');
+        background-image: url('materials/pills_d.png');
         background-size: 100% 100%;
     }
 }
@@ -437,7 +437,7 @@ h1, p, a {
         width: 100%;
         aspect-ratio: 1 / 1.5;
 
-        background-image: url(../materials/device.png);
+        background-image: url('materials/device.png');
         background-size: 350% 100%;
         background-position: 60% center;
     }
@@ -469,7 +469,7 @@ h1, p, a {
         width: 100%;
         aspect-ratio: 2.3 / 1;
 
-        background-image: url(../materials/device.png);
+        background-image: url('materials/device.png');
         background-size: 100% 100%;
     }
 
