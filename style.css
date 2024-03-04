@@ -36,7 +36,7 @@
 }
 
 .mascot:hover::before {
-    content: "I am very glad you've visited us!";
+    content: "I am so glad you've visited us!";
 
     display: block;
     position: absolute;
