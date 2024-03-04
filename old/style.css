@@ -225,7 +225,7 @@ a {
 .cta-container {
     width: 1920px;
     height: 850px;
-    background-image: url('./materials/device.png');
+    background-image: url('../materials/device.png');
 }
 
 .cta-content-container {
