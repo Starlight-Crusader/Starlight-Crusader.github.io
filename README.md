@@ -15,5 +15,5 @@ https://starlight-crusader.github.io/
 
 ## Mascot
 
-* For the desktop version, a mascot character was added in the bottom-left corner. And I mean it, you won't find it in the mobile version. I've hid it on purpose, because I think it is unsuitable element in the context of mobile web-design. If it is necessary for him to be there, I'll add it in the future versions.
-* It appears on the screen in its entirety after a certain period of time, follows the user as they scroll, and displays a welcome message when hovering over it.
+* For the desktop version, a <b>mascot character</b> was added in the bottom-left corner. And I mean it, you <b>won't find it in the mobile version</b>. I've hid it on purpose, because I think it is unsuitable element in the context of mobile web-design. <b>If it is necessary for him to be there, I'll add it in the next version.</b>
+* It <b>appears on the screen in its entirety after a certain period of time</b>, follows the user as they scroll and <b>bounces</b>, and displays <b>a welcoming message</b> when hovering over it.
