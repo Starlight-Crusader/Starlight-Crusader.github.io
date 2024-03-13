@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- <link rel="stylesheet" href="reset.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -37,14 +38,14 @@
                 </div>
             </div>
 
-            <div class="navbar">
-                <a class="navbtn" href="#fs">FEATURES</a>
-                <a class="navbtn" href="#">PRODUCTS</a>
-                <a class="navbtn" href="#">CONTACTS</a>
+            <div class="custom-navbar">
+                <a type="button" class="navbtn btn btn-outline-dark" href="#fs">FEATURES</a>
+                <a type="button" class="navbtn btn btn-outline-dark" href="#">PRODUCTS</a>
+                <a type="button" class="navbtn btn btn-outline-dark" href="#">CONTACTS</a>
             </div>
         </div>
 
-        <div class="container">
+        <div class="custom-container">
             <div class="greeting-section">
                 <div class="greeting-item greeting-text">
                     <p>Stay on top of your wellness journey effortlessly with IntelliDose, your intelligent pill companion!</p>
@@ -71,7 +72,7 @@
         <div class="features-section" id="fs">
             <h1 class="header">Selling features</h1>
 
-            <div class="features-items">
+            <!-- <div class="features-items">
                 <div class="features-item">
                     <div class="features-item-icon">
                         <img src="materials/clock.png">
@@ -113,6 +114,43 @@
                         <p>Stay vigilant to any manipulations or alterations occurring within the device.</p>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="features-items">
+
+                <div class="card custom-card text-center bg-light mb-3">
+                    <div class="card-header">
+                        <img src="./materials/clock.png" class="card-img" alt="Feature icon">
+                    </div>
+                  
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">Personalized<br>schedule</h5>
+                        <p class="card-text custom-card-text">Schedule different medications to multiple different users linked.</p>
+                    </div>
+                </div>
+
+                <div class="card custom-card text-center bg-light mb-3">
+                    <div class="card-header">
+                        <img src="./materials/waves.png" class="card-img" alt="Feature icon">
+                    </div>
+                  
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">Seamless<br>accessing</h5>
+                        <p class="card-text custom-card-text">Effortless simplicity of RFID tags makes connectivity as easy as a touch.</p>
+                    </div>
+                </div>
+
+                <div class="card custom-card text-center bg-light mb-3">
+                    <div class="card-header">
+                        <img src="./materials/pie.png" class="card-img" alt="Feature icon">
+                    </div>
+                  
+                    <div class="card-body">
+                        <h5 class="card-title custom-card-title">Monitoring<br>& logging</h5>
+                        <p class="card-text custom-card-text">Stay vigilant to any manipulations or alterations occurring within the device.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -122,17 +160,19 @@
                     <h1 class="header cta-header">Did we manage to catch Your attention?</h1>
                     <p class="cta-text">Our consultants are always ready to clarify any details and help you choose the most suitable one for your model.</p>
 
-                    <div class="navbar">
-                        <a class="navbtn" href="#">PRODUCTS</a>
-                        <a class="navbtn" href="#">CONTACTS</a>
+                    <div class="custom-navbar">
+                        <a type="button" class="navbtn btn btn-outline-dark" href="#">PRODUCTS</a>
+                        <a type="button" class="navbtn btn btn-outline-dark" href="#">CONTACTS</a>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <footer class="footer">
+        <div class="custom-footer">
             <p>2024 | IntelliDose | All rights reserved</p>
-        </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
