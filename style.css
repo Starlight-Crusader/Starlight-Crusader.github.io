@@ -616,9 +616,9 @@ h1, p, a {
 }
 
 .custom-card {
-    border-color: black;
+    /* border-color: black;
     border-width: 1px;
-    border-radius: 20px;
+    border-radius: 20px; */
 
     box-shadow: 5px 5px 10px lightgrey;
 }
