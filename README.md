@@ -17,3 +17,7 @@ https://starlight-crusader.github.io/
 
 * For the desktop version, a <b>mascot character</b> was added in the bottom-left corner. And I mean it, you <b>won't find it in the mobile version</b>. I've hid it on purpose, because I think it is unsuitable element in the context of mobile web-design. <b>If it is necessary for him to be there, I'll add it in the next version.</b>
 * It <b>appears on the screen in its entirety after a certain period of time</b>, follows the user as they scroll and <b>bounces</b>, and displays <b>a welcoming message</b> when hovering over it.
+
+# CSS Framework Integration
+
+For the CSS framework to be integrated into this project, I've picked the Bootstrap framework. The first thing I've had to deal with is fixing my container usage. The first thing I've refactored are all the buttons on the page (new look and way smoother scrolling when moving to another part of the page). The second thing is the feature cards. The bootstrap provides a lot of predefined styles for giving this element any visual imaginable.
